@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
      res.send("Hello " + escape(obj.username));
    }
  } else {
-     res.cookie('profile', "eyJ1c2VybmFtZSI6IkFkaXR5YSIsImNvdW50cnkiOiJpbmRpYSIsImNpdHkiOiJEZWxoaSJ9", {
+     res.cookie('profile', "eyJ1c2VybmFtZSI6ImJpbGwiLCJjb3VudHJ5IjoidXMiLCJjaXR5IjoiYXVzdGluIn0=", {
        maxAge: 900000,
        httpOnly: true
      });
