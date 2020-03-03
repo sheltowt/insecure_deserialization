@@ -4,7 +4,7 @@ var escape = require('escape-html');
 var serialize = require('node-serialize');
 var cookieEncrypter = require('./cook');
 var app = express();
-//Don't hard code secret keys, this is done only for example purposes
+//Don't hard code secret keys, this is done only for simplicity and example purposes
 var secretKey = 'aaa%M@MEYYPYxr8G3@KXJvaZh!e5L0eO';
 
 app.use(cookieParser(secretKey));
